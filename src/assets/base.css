@@ -23,3 +23,17 @@
 body {
   font-family: Engrgotn;
 }
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  cursor: pointer;
+}
+
+main {
+  background-color: var(--white);
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+}

@@ -1,4 +1,21 @@
-<script setup>
+<script>
+
+export default {
+
+  name: 'LoginPage',
+
+  data() {},
+
+  components: {},
+
+  methods: {
+
+    goToListaProdutos() {
+      this.$router.push('/lista')
+    }
+  },
+
+}
 
 </script>
 
@@ -30,16 +47,16 @@
                 <div class="input" id="input-email">
                   <label for="email">E-mail:</label>
                   <input type="email" name="email" id="email">
-                  <!-- <span class="msg">Valid email</span> -->
+                  <!-- <span class="msg">Por favor digite um E-mail válido</span> -->
                 </div>
 
                 <div class="input" id="input-senha">
                   <label for="password">Senha:</label>
                   <input type="password" name="password" id="senha">
-                  <!-- <span class="msg">Incorrect password</span>  -->
+                  <!-- <span class="msg">Senha incorreta</span>  -->
                 </div>
 
-                <button type="submit" id="login-button">Entrar</button>
+                <button type="submit" id="login-button" @click.prevent="goToListaProdutos">Entrar</button>
               </form>
 
               <div id="esqueci">
@@ -56,8 +73,7 @@
           </div>
 
           <div id="url">
-            <a href="#">WWW.AGENCIABRABOS.COM.BR</a>
-            <!-- <a href="#"><img src="/src/assets/img/Ativo 6.png"></a> -->
+            <a href="#">WWW.AGENCIABRABOS.COM.BR</a>            
           </div>
         </div>
       </div>
@@ -66,17 +82,9 @@
 </template>
 
 <style scoped>
-a {
-  text-decoration: none;
-  color: var(--white);
-  cursor: pointer;
-}
-
-main {
-  background-color: var(--white);
-}
-
 .container {
+  max-width: 100vw;
+  max-height: 100vh;
   width: 100vw;
   height: 100vh;
   background-image: url("/src/assets/img/parte verde-01.png");
@@ -97,13 +105,17 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 17rem;
-  padding-left: 7rem;
-  padding-bottom: 3.5rem;
+  padding-top: 12rem;
+  padding-left: 10rem;
+  padding-bottom: 3rem;
 }
 
 #logo img {
   width: 65%;
+}
+
+#logo img:last-child {
+  max-width: 120px;
 }
 
 #login {
@@ -112,15 +124,14 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-right: 11rem;
+  padding-right: 7rem;
   padding-bottom: 5rem;
 }
 
 #conta-img {
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* font-size: 2.3rem; */
+  align-items: center;  
   padding-bottom: .7rem;
 }
 
@@ -129,8 +140,7 @@ main {
 }
 
 #conta-img img:last-child {
-  width: 55%;
-  /* color: var(--white); */
+  width: 55%;  
   padding-top: .5rem;
   padding-left: .7rem;
 }
