@@ -41,17 +41,17 @@ export default {
     align-items: center;    
     height: 15vh;
     width: 100%;
-    padding-top: 1rem;
+    padding-top: .7rem;
 }
 
 #logo {
     /* padding: .5rem 0 0 4rem; */
-    padding-left: 6rem;
-    padding-right: 10rem;
+    padding-left: 4rem;
+    padding-right: 7rem;
 }
 
 #logo img{
-    max-width: 70px;
+    max-width: 58px;
 }
 
 #search-bar {
@@ -61,7 +61,7 @@ export default {
 }
 
 #search-bar input {
-    width: 41rem;
+    width: 50rem;
     height: 1.6rem;
     background-color: #f0f0f0;
     border: none;
@@ -72,7 +72,7 @@ export default {
 #search-bar img {
     max-width: 65px;
     padding-left: .5rem;
-    margin-right: 6rem;
+    margin-right: 2rem;
 }
 
 #hamburguer img {
