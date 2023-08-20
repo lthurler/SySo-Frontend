@@ -21,42 +21,50 @@ export default {
         <div id="container">
             <div id="titulo">
                 <img src="/src/assets/img/user.jpg">
-                <div id="menu-titulo">
-                    <span>Menu</span>
-                </div>
+                <span>Menu</span>                
             </div>
+
             <nav id="menu">
                 <ul id="menu-itens">
                     <div>
                         <li><a href="#" @click.prevent="">Home</a></li>
                     </div>
+
                     <div>
                         <li><a href="#" @click.prevent="">Gestão de Cadastro</a></li>
-                    </div>                    
+                    </div> 
+
                     <div>
                         <li><a href="#" @click.prevent="">Gestão de Pedidos</a></li>
                     </div>
+
                     <div>
                         <li><a href="#" @click.prevent="">Gestão Armazenagem</a></li>
                     </div>
+
                     <div>
                         <li><a href="#" @click.prevent="">Gestão Logística</a></li>
                     </div>
+
                     <div>
                         <li><a href="#" @click.prevent="">Gestão de Faturamento</a></li>
                     </div>
                     <div>
                         <li><a href="#" @click.prevent="">Integração</a></li>
                     </div>
+
                     <div>
                         <li><a href="#" @click.prevent="">Rastreamento</a></li>
                     </div>
+
                     <div>
                         <li><a href="#" @click.prevent="">Configuração</a></li>
                     </div>
+
                     <div>
                         <li><a href="#" @click.prevent="">Usuário</a></li>
                     </div>
+
                     <div>
                         <li><a href="#" @click.prevent="">Configurações</a></li>
                     </div>
@@ -86,11 +94,11 @@ export default {
     justify-content: flex-start;
     align-items: center;
     margin: 0;
-    padding: 1rem 2rem 1rem 0;
-    max-height: 85vh;
+    padding: 1rem 3rem 1.05rem 0;    
     background-color: #111111;
     color: var(--white);
     border-radius: 0 2rem 0 0;
+    border:none;
 }
 
 #titulo {
@@ -99,31 +107,28 @@ export default {
     justify-content: center;
     align-items: center;
     padding-top: .3rem;
-    font-size: 1.5rem;            
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    border-bottom: 1px solid#86c525;            
 }
 
 #titulo img{
-    max-width: 48px;
-}
-
-#menu-titulo {
-    border-bottom: 1px solid#86c525;
-    margin-bottom: .8rem;
+    max-width: 60px;
 }
 
 #menu-itens {    
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 0;   
 }
 
 #menu-itens div {
     margin-bottom: .5rem;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     border-bottom: 1px solid transparent;/* padding-right: 1rem; */
 }
 
 #menu-itens div:nth-last-child(2) {
-    margin-bottom: 4.6rem;
+    margin-bottom: 3.4rem;
 }
 
 

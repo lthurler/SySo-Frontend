@@ -41,17 +41,17 @@ export default {
     align-items: center;    
     height: 15vh;
     width: 100%;
-    padding-top: .7rem;
+    padding-top: .4rem;
 }
 
 #logo {
     /* padding: .5rem 0 0 4rem; */
-    padding-left: 4rem;
-    padding-right: 7rem;
+    padding-left: 5.5rem;
+    padding-right: 8.5rem;
 }
 
 #logo img{
-    max-width: 58px;
+    max-width: 73px;
 }
 
 #search-bar {
@@ -61,8 +61,8 @@ export default {
 }
 
 #search-bar input {
-    width: 50rem;
-    height: 1.6rem;
+    width: 53rem;
+    height: 2rem;
     background-color: #f0f0f0;
     border: none;
     outline: none;
@@ -70,7 +70,7 @@ export default {
 }
 
 #search-bar img {
-    max-width: 65px;
+    max-width: 70px;
     padding-left: .5rem;
     margin-right: 2rem;
 }
