@@ -224,6 +224,7 @@ export default {
 #login-button:hover,
 #login-button:focus {
   background-color: hsl(var(--primary-hsl), .4);
+  color: var(--white)
 }
 
 #esqueci {

@@ -21,11 +21,7 @@ export default {
             <div id="search-bar">
                 <input type="text">
                 <img src="/src/assets/img/lupa.png">    
-            </div>
-
-            <!-- <div id="search-button">
-                <img src="/src/assets/img/lupa.png">
-            </div> -->
+            </div>           
 
             <div id="hamburguer">
                 <img src="/src/assets/img/menu_hamburguer.png">
@@ -36,8 +32,7 @@ export default {
 
 <style scoped>
 #header{
-    display: flex;
-    /* justify-content: space-around; */
+    display: flex;    
     align-items: center;    
     height: 15vh;
     width: 100%;

@@ -6,9 +6,17 @@ export default {
     props: {},
 
     methods: {
-        goToProductAdd() {
-            this.$router.push('/addproduct')
+        goToconsultaTransportadoras() {
+            this.$router.push('/consulta-transportadoras')
         },
+        
+        goToLogin() {
+            this.$router.push('/')
+        },
+
+        goToListaProdutos() {
+            this.$router.push('/lista')
+    }
     },
 
     components: {},
@@ -31,7 +39,7 @@ export default {
                     </div>
 
                     <div>
-                        <li><a href="#" @click.prevent="">Gestão de Cadastro</a></li>
+                        <li><a href="#" @click.prevent="goToListaProdutos">Gestão de Cadastro</a></li>
                     </div> 
 
                     <div>
@@ -43,12 +51,13 @@ export default {
                     </div>
 
                     <div>
-                        <li><a href="#" @click.prevent="">Gestão Logística</a></li>
+                        <li><a href="#" @click.prevent="goToconsultaTransportadoras">Gestão Logística</a></li>
                     </div>
 
                     <div>
                         <li><a href="#" @click.prevent="">Gestão de Faturamento</a></li>
                     </div>
+
                     <div>
                         <li><a href="#" @click.prevent="">Integração</a></li>
                     </div>
@@ -70,7 +79,7 @@ export default {
                     </div>
                 </ul>
 
-                <a href="#" @click.prevent="">
+                <a href="#" @click.prevent="goToLogin">
                     <div id="menu-sair">
                         <img src="/src/assets/img/sair.jpg">
                         <p>Sair</p>
@@ -78,8 +87,7 @@ export default {
                 </a>                    
             </nav>
         </div>
-    </aside>
-    
+    </aside>    
 </template>
 
 
