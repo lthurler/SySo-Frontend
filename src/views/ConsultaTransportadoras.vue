@@ -21,8 +21,7 @@ export default {
             { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
             { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
             { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
-            { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
-            { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" }        
+                   
         ]
     };
 },
@@ -224,6 +223,12 @@ label {
     font-family: 'Engravers Gothic';    
     color: var(--white);
     background-color: #235339;
+    transition: .5s;
+}
+
+#filtro form button:hover {
+    cursor: pointer;   
+    background-color: #86C526;            
 }
 
 #resultado {
@@ -301,6 +306,12 @@ label {
     font-family: 'Engravers Gothic';    
     color: var(--white);
     background-color: #235339;
+    transition: .5s;
+}
+
+#botao button:hover {
+    cursor: pointer;   
+    background-color: #86C526;            
 }
 
 #paginas {
@@ -316,6 +327,11 @@ label {
 #paginas a i {
     color: #235339;
     font-size: 1rem;
+    transition: .5s;
+}
+
+#paginas a i:hover {       
+    color: #86C526;            
 }
 
 </style>

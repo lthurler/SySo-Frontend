@@ -20,11 +20,17 @@ export default {
 
             <div id="search-bar">
                 <input type="text">
-                <img src="/src/assets/img/lupa.png">    
+                <a href="#">
+                    <img src="/src/assets/img/lupa.png">
+                </a>
+                
             </div>           
 
             <div id="hamburguer">
-                <img src="/src/assets/img/menu_hamburguer.png">
+                <a href="#">
+                    <img src="/src/assets/img/menu_hamburguer.png">
+                </a>
+
             </div>
         </div>
     </header>
@@ -73,6 +79,5 @@ export default {
 #hamburguer img {
     max-width: 55px;
 }
-
 
 </style>

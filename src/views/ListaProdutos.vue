@@ -35,8 +35,8 @@ export default {
             { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
             { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
             { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
             { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" }
+            
         ]
     };
 },
@@ -154,7 +154,7 @@ export default {
 }
 
 .tabela-linha {
-    font-size: .6rem;
+    font-size: .7rem;
     background-color: var(--white);
 }
 

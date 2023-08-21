@@ -12,18 +12,7 @@ export default {
             { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"},
             { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"},
             { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"},
-            { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"},
-            { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"},
-            { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"},
-            { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"},
-            { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"},
-            { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"},
-            { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"},
-            { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"}
-            
-            
-            
-            
+            { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"}                     
         ]
     };
 },
@@ -40,13 +29,13 @@ export default {
 
             <div id="dados-content">
                 <div id="dados">
-                    <p>Gestão armazenagem > <span>Consulta de entrada de NFe</span></p>
+                    <p>Gestão armazenagem > <span>Entrada de NFe</span></p>
                     
                     <div id="titulo">
-                        <h1>Consulta de entrada de NFe</h1>
+                        <h1>Entrada de nota fiscal fornecedor</h1>
                     </div>
 
-                    <div id="consulta-container">                    
+                    <div id="entrada-container">                    
                         <div id="pesquisa-container">
                             <form action="">
                                 <div>
@@ -57,25 +46,42 @@ export default {
                                 <div>
                                     <label for="deposito">Depósito:</label>
                                     <input type="text" name="deposito">
-                                </div>
+                                </div>                                
 
                                 <div>
-                                    <label for="fornecedor">Fornecedor:</label>
-                                    <input type="text" name="fornecedor">
-                                </div>
-
-                                <div>
-                                    <label for="entrada">Selecionar NFe entrada:</label>
-                                    <input type="text" name="entrada">
+                                    <label for="nfe">Selecionar NFe:</label>
+                                    <input type="text" name="nfe">
                                 </div>                          
                             </form>
 
                             <div id="botoes-pesquisa">
-                                <button type="submit">Pesquisar</button>
+                                <button type="submit">Carregar XML</button>
                                 <button type="submit">Limpar</button>
                             </div>
-                        </div>    
+                        </div>
+
                         <div id="container-tabela">
+                            <div id="relacao">
+                                <h2>Relacionamento produto fornecedor</h2>                                
+                                <form action="">
+                                    <div id="transp-nome">
+                                        <label for="fornecedor">Fornecedor:</label>
+                                        <input type="text" name="fornecedor">
+                                    </div>
+
+                                    <div id="status">
+                                        <label for="razao">Razão Social:</label>
+                                        <input type="text" name="razao">
+                                    </div>
+
+                                    <div id="cnpj">
+                                        <label for="cnpj">CNPJ:</label>
+                                        <input type="text" name="cnpj">
+                                    </div>
+                                </form>
+                                <span>Relação de Produtos</span>                      
+                            </div>
+
                             <div id="tabela">
                                 <div class="linha tabela-header">
                                     <div class="celula celula-header">Item NF</div>
@@ -97,6 +103,13 @@ export default {
                                     <div class="celula">{{ linha.quantidade }}</div>                                
                                 </div>                            
                             </div>
+
+                            <div id="observacao">
+                                <label for="observacao">Observação:</label>
+                                <input type="text" name="observacao">
+                            </div>
+
+
                         </div>                    
                 
 
@@ -203,17 +216,17 @@ button:hover {
     text-align: center;
 }
 
-#consulta-container {
+#entrada-container {
     display: flex;
     flex-direction: column;
-    padding: .8rem 1rem 0 1rem;
+    gap: .4rem;
+    padding: .7rem 1rem 0 1rem;
 }
 
 #pesquisa-container {
     display: flex;    
-    align-items: center;
-    margin-bottom: .9rem;
-    padding: 1rem 0 .7rem 1.37rem;    
+    align-items: center;    
+    padding: .2rem 0 .7rem 1.37rem;    
     border: 2px solid #235339;
     border-radius: 1rem;
 }
@@ -247,8 +260,28 @@ button:hover {
 #container-tabela {
     border: 2px solid #235339;
     border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 1rem;   
+    overflow: hidden;       
+}
+
+#relacao {
+    display: flex;    
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:.3rem;    
+    padding: 0 0 .5rem 1.3rem;    
+}
+
+#relacao span {
+    font-size: 1rem;
+}
+
+#relacao form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: flex-start;
+    gap: .3rem;
+    padding-left: .8rem;
 }
 
 #tabela {
@@ -271,9 +304,8 @@ button:hover {
 }
 
 .linha {
-    display: grid;  
-    /* grid-template-columns: 1fr 1.7595fr 1.2025fr 1.2025fr 1.2025fr 2.9241fr 1.9873fr; */
-     grid-template-columns: 1fr 1.7614fr 1.2045fr 1.4886fr 1.2045fr 2.9205fr 1.7045fr;
+    display: grid;    
+    grid-template-columns: 1fr 1.7614fr 1.2045fr 1.4886fr 1.2045fr 2.9205fr 1.7045fr;
     align-items: center;
     border-bottom: 2px solid #e7e7e7; 
 }
@@ -287,6 +319,23 @@ button:hover {
     border-right: none; 
 }
 
+#observacao {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Engravers Gothic';
+    font-size: 1rem;
+    padding: .2rem .9rem .5rem .9rem;
+}
+
+#observacao label{
+    padding-left: .2rem;
+}
+
+#observacao input{
+    width: 100%;
+    height: 2.5rem;
+}
+
 #total {    
     border: 2px solid #235339;
     border-radius: 1rem;
@@ -295,7 +344,7 @@ button:hover {
 #input-total {
     display: flex;    
     align-items: center;    
-    padding: .5rem 0 .7rem 1.37rem;    
+    padding: .3rem 0 .3rem 1.37rem;    
      
 }
 
@@ -303,7 +352,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: .3rem;
+    gap: .2rem;
 }
 
 #input-total form input {

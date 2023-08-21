@@ -20,7 +20,11 @@ export default {
 
         goToConsultaNota() {
             this.$router.push('/consulta-nota')
-        }        
+        },
+        
+        goToEntradaNota() {
+            this.$router.push('/entrada-nota')
+        }
     },
 
     components: {},
@@ -59,7 +63,7 @@ export default {
                     </div>
 
                     <div>
-                        <li><a href="#" @click.prevent="">Gestão de Faturamento</a></li>
+                        <li><a href="#" @click.prevent="goToEntradaNota">Gestão de Faturamento</a></li>
                     </div>
 
                     <div>
