@@ -8,36 +8,36 @@ export default {
   data() {
     return {
       linhas: [
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
-        { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" }
-    ]
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
+            { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" }
+        ]
     };
 },
   components: { SysoHeader, SysoMenu }
@@ -54,7 +54,7 @@ export default {
             <SysoMenu />
             <div id="dados-content">
                 <div id="dados">
-                    <p>Gestão de Cadastro > <strong>Lista de pedidos para preparação de despacho</strong></p>
+                    <p>Gestão de Cadastro > <span>Lista de pedidos para preparação de despacho</span></p>
                     
                     <div id="titulo">
                         <h1>Lista de produtos pedido</h1>
@@ -108,7 +108,7 @@ export default {
     margin: .4rem;
     background-color: #f7f7f7;    
     border-radius: 11px;
-    font-family: Engrgotn;
+    font-family: 'Engravers Gothic Bold';    
     font-size: .8rem;
     font-weight: bold;
     color: #235339;       
@@ -118,7 +118,7 @@ export default {
     padding: .5rem 0 0 1rem;    
 }
 
-#dados p strong {
+#dados p span {    
     font-size: .9rem;
 }
 
@@ -129,20 +129,20 @@ export default {
 
 #subtitulo {
     font-size: 1.5rem;
-    padding-bottom: .1rem;
+    padding-bottom: .3rem;
     padding-left: 1rem;
 }
 
 #container-tabela {
     border: 2px solid #235339;
     border-radius: 20px;
-    overflow: hidden;  
+    overflow: hidden;
+    font-family: 'Engravers Gothic'; 
 }
 
 #tabela {
     display: grid;
-    width: 100%;
-    font-family: Engrgotn;
+    width: 100%;    
 }
 
 .tabela-header {
@@ -150,7 +150,7 @@ export default {
     border-top: none;
     background-color: #235339;
     color: var(--white);
-    padding: .2rem;
+    padding: .2rem 0;    
 }
 
 .tabela-linha {

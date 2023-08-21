@@ -41,8 +41,8 @@ export default {
 
 #logo {
     /* padding: .5rem 0 0 4rem; */
-    padding-left: 5.5rem;
-    padding-right: 8.5rem;
+    padding-left: 4.8rem;
+    padding-right: 9.2rem;
 }
 
 #logo img{
