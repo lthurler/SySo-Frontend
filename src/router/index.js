@@ -18,6 +18,11 @@ const router = createRouter({
       path: '/consulta-transportadoras',
       name: 'ConsultaTransportadoras',
       component: () => import('../views/ConsultaTransportadoras.vue')
+    },
+    {
+      path: '/consulta-nota',
+      name: 'ConsultaNfe',
+      component: () => import('../views/ConsultaNfe.vue')
     }
   ]
 })

@@ -36,10 +36,10 @@ export default {
         <SysoHeader />
         <div id="content">
             <SysoMenu />
-
+            
             <div id="dados-content">
                 <div id="dados">
-                    <p>Gestão de Logística > <strong>Consulta Transportadoras</strong></p>
+                    <p>Gestão de Logística > <span>Consulta Transportadoras</span></p>
                     
                     <div id="titulo">
                         <h1>Consulta Transportadoras</h1>
@@ -100,8 +100,7 @@ export default {
                                 <div class="celula celula-header">Contato</div>
                                 <div class="celula celula-header">Telefone</div>
                                 <div class="celula celula-header">E-mail</div>
-                                <div class="celula celula-header">Ações</div>
-                                
+                                <div class="celula celula-header">Ações</div>                                
                             </div>                            
                             
                             <div class="linha tabela-linha" v-for="linha in linhas" :key="linha.cnpj">
@@ -181,7 +180,7 @@ label {
     padding: .15rem 0 0 1rem;    
 }
 
-#dados p strong {
+#dados p span {
     font-size: .9rem;
 }
 

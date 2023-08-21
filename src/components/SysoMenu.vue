@@ -16,7 +16,11 @@ export default {
 
         goToListaProdutos() {
             this.$router.push('/lista')
-    }
+        },
+
+        goToConsultaNota() {
+            this.$router.push('/consulta-nota')
+        }        
     },
 
     components: {},
@@ -47,7 +51,7 @@ export default {
                     </div>
 
                     <div>
-                        <li><a href="#" @click.prevent="">Gestão Armazenagem</a></li>
+                        <li><a href="#" @click.prevent="goToConsultaNota">Gestão Armazenagem</a></li>
                     </div>
 
                     <div>
