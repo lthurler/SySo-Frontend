@@ -84,9 +84,7 @@ export default {
 <style scoped>
 .container {
   max-width: 100vw;
-  max-height: 100vh;
-  width: 100vw;
-  height: 100vh;
+  max-height: 100vh;  
   background-image: url("/src/assets/img/parte verde-01.png");
   background-position: right;
   background-repeat: no-repeat;
@@ -105,13 +103,13 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 12rem;
+  padding-top: 13rem;
   padding-left: 10rem;
   padding-bottom: 3rem;
 }
 
 #logo img {
-  width: 65%;
+  width: 67%;
 }
 
 #logo img:last-child {
@@ -125,7 +123,7 @@ export default {
   justify-content: center;
   align-items: center;
   padding-right: 7rem;
-  padding-bottom: 5rem;
+  padding-bottom: 8rem;
 }
 
 #conta-img {
@@ -204,26 +202,22 @@ export default {
   color: var(--white);
 }
 
-.input input:focus {
-  box-shadow: 0 0 0 1px hsl(var(--primary-hsl));
-}
-
 #login-button {
   padding: .1rem 3.3rem;
   margin: 0 auto;
   font-size: 1.2rem;
-  font-family: Engrgotn;
+  font-family: 'Engravers Gothic';
   color: #000;
-  background-color: #86C525;
-  border: 1px solid hsl(var(--primary-hsl));
+  background-color: var(--light-green);
+  border: none;
   border-radius: .35em;
   outline: none;
   cursor: pointer;
+  transition: .5s;
 }
 
-#login-button:hover,
-#login-button:focus {
-  background-color: hsl(var(--primary-hsl), .4);
+#login-button:hover {
+  background-color: var(--dark-green);
   color: var(--white)
 }
 
@@ -254,4 +248,5 @@ export default {
   padding-bottom: 1rem;
   font-size: 1.2rem;
 }
+
 </style>

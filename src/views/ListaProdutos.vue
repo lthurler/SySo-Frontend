@@ -7,7 +7,9 @@ export default {
 
   data() {
     return {
-      linhas: [
+        menuVisible: true,
+
+        linhas: [
             { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
             { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
             { sku: "1009858", produto: "Colchão exemplo01", quantidade: "100", acoes: "APROVAR/ESTORNAR" },
@@ -39,19 +41,24 @@ export default {
             
         ]
     };
-},
-  components: { SysoHeader, SysoMenu }
+  },
+  
+  components: { SysoHeader, SysoMenu },
+
+  methods: {
+    toggleMenu() {
+        this.menuVisible = !this.menuVisible;
+    },
+  }
 }
-
-
 
 </script>
 
 <template>
     <main>
-        <SysoHeader />
+        <SysoHeader @toggle-menu="toggleMenu" />
         <div id="content">
-            <SysoMenu />
+            <SysoMenu :menuVisible="menuVisible" />
             <div id="dados-content">
                 <div id="dados">
                     <p>Gestão de Cadastro > <span>Lista de pedidos para preparação de despacho</span></p>
@@ -98,7 +105,7 @@ export default {
 #dados-content {
     height: 34rem;
     width: 65rem;    
-    background-color: #f0f0f0;
+    background-color: var(--dark-gray);
     border-radius: 17px;
 }
 
@@ -106,7 +113,7 @@ export default {
     height: 33.2rem;
     width: 64.26rem;
     margin: .4rem;
-    background-color: #f7f7f7;    
+    background-color: var(--light-gray);    
     border-radius: 11px;
     font-family: 'Engravers Gothic Bold';    
     font-size: .8rem;
@@ -134,7 +141,7 @@ export default {
 }
 
 #container-tabela {
-    border: 2px solid #235339;
+    border: 2px solid var(--dark-green);
     border-radius: 20px;
     overflow: hidden;
     font-family: 'Engravers Gothic'; 
@@ -148,7 +155,7 @@ export default {
 .tabela-header {
     font-size: 1rem;
     border-top: none;
-    background-color: #235339;
+    background-color: var(--dark-green);
     color: var(--white);
     padding: .2rem 0;    
 }
@@ -162,12 +169,12 @@ export default {
     display: grid;  
     grid-template-columns: repeat(3, 1fr) 2fr;
     align-items: center;
-    border-bottom: 2px solid #f0f0f0; 
+    border-bottom: 2px solid var(--light-gray); 
 }
 
 .celula {    
     text-align: center;
-    border-right: 2px solid #f0f0f0; 
+    border-right: 2px solid var(--light-gray); 
 }
 
 .celula:last-child {

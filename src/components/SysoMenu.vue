@@ -3,7 +3,9 @@
 export default {
     name: "SysoMenu",
 
-    props: {},
+    props: {
+        menuVisible: Boolean,
+    },
 
     methods: {
         goToconsultaTransportadoras() {
@@ -24,7 +26,11 @@ export default {
         
         goToEntradaNota() {
             this.$router.push('/entrada-nota')
-        }
+        },
+
+        goToPedidosDespacho() {
+            this.$router.push('/pedidos-despacho')
+        }        
     },
 
     components: {},
@@ -34,7 +40,7 @@ export default {
 
 <template>
     <aside>
-        <div id="container">
+        <div id="container" :class="{ 'menu-visible': menuVisible, 'menu-hidden': !menuVisible }">            
             <div id="titulo">
                 <img src="/src/assets/img/user.jpg">
                 <span>Menu</span>                
@@ -51,7 +57,7 @@ export default {
                     </div> 
 
                     <div>
-                        <li><a href="#" @click.prevent="">Gestão de Pedidos</a></li>
+                        <li><a href="#" @click.prevent="goToPedidosDespacho">Gestão de Pedidos</a></li>
                     </div>
 
                     <div>
@@ -114,7 +120,17 @@ export default {
     background-color: #111111;
     color: var(--white);
     border-radius: 0 2rem 0 0;
-    border:none;
+    border:none;          
+}
+
+.menu-visible {
+    transform: translateX(0);
+    transition: transform 0.7s ease;
+}
+
+.menu-hidden {
+  transform: translateX(-100%);
+  transition: transform 0.7s ease;
 }
 
 #titulo {
@@ -125,7 +141,7 @@ export default {
     padding-top: .3rem;
     margin-bottom: 1rem;
     font-size: 2rem;
-    border-bottom: 1px solid#86c525;            
+    border-bottom: 1px solid var(--light-green);            
 }
 
 #titulo img{
@@ -133,28 +149,26 @@ export default {
 }
 
 #menu-itens {    
-    font-size: 1.2rem;
+    font-size: 1.199rem;
     padding: 0;   
 }
 
 #menu-itens div {
     margin-bottom: .5rem;
     padding-left: 1.5rem;
-    border-bottom: 1px solid transparent;/* padding-right: 1rem; */
+    border-bottom: 1px solid transparent;
 }
 
 #menu-itens div:nth-last-child(2) {
     margin-bottom: 3.4rem;
 }
 
-
 #menu-itens div:last-child {    
     margin-bottom:.8rem;    
 }
 
 #menu-itens div:hover {
-    border-bottom-color: #86c525;
-    /* border-bottom: 1px solid#86c525; */
+    border-bottom-color: var(--light-green);    
 }
 
 #menu-sair {

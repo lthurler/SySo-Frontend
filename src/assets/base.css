@@ -1,9 +1,8 @@
 :root {
-  --primary-light-hsl: 200, 100%, 91%;
-  --primary-hsl: 200, 100%, 50%;
-  --primary-dark-hsl: 200, 100%, 6%;
-  --success-hsl: 100, 60%, 50%;
-  --error-hsl: 0, 60%, 50%;
+  --light-green: #86C526;
+  --dark-green: #235339;
+  --light-gray: #f7f7f7;
+  --dark-gray: #f0f0f0;
   --white: #fff;
 }
 
@@ -11,50 +10,6 @@
   font-family: 'Engravers Gothic';
   src: url(/src/assets/fonts/ENGRGOTN.TTF);
 }
-
-/* @font-face {
-  font-family: 'Engravers Gothic';
-  src: local('Engravers Gothic Regular'), local('Engravers-Gothic-Regular'),
-      url(/src/assets/fonts/EngraversGothic.woff2) format('woff2'),
-      url(/src/assets/fonts/EngraversGothic.woff) format('woff'),
-      url(/src/assets/fonts/EngraversGothic.ttf) format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Engravers Gothic';
-  src: local('Engravers Gothic Bold'), local('Engravers-Gothic-Bold'),
-      url(/src/assets/fonts/EngraversGothic-Bold.woff2) format('woff2'),
-      url(/src/assets/fonts/EngraversGothic-Bold.woff) format('woff'),
-      url(/src/assets/fonts/EngraversGothic-Bold.ttf) format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Engravers Gothic';
-  src: url(/src/assets/fonts/EngraversGothic-Bold.eot);
-  src: local('Engravers Gothic Bold'), local('EngraversGothic-Bold'),
-      url(/src/assets/fonts/EngraversGothic-Bold.eot) format('embedded-opentype'),
-      url(/src/assets/fonts/EngraversGothic-Bold.woff2) format('woff2'),
-      url(/src/assets/fonts/EngraversGothic-Bold.woff) format('woff'),
-      url(/src/assets/fonts/EngraversGothic-Bold.ttf) format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Engravers Gothic';
-  src: url(/src/assets/fonts/EngraversGothic.eot);
-  src: local('Engravers Gothic'), local('EngraversGothic'),
-      url(/src/assets/fonts/EngraversGothic.eot) format('embedded-opentype'),
-      url(/src/assets/fonts/EngraversGothic.woff2) format('woff2'),
-      url(/src/assets/fonts/EngraversGothic.woff) format('woff'),
-      url(/src/assets/fonts/EngraversGothic.ttf) format('truetype');
-  font-weight: normal;
-  font-style: normal;
-} */
 
 @font-face {
   font-family: 'Engravers Gothic Bold';
@@ -71,8 +26,7 @@
 }
 
 body {
-  font-family: 'Engravers Gothic';
-  /* font-family: Engrgotn; */
+  font-family: 'Engravers Gothic';  
 }
 
 a {

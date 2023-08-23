@@ -7,6 +7,8 @@ export default {
 
   data() {
     return {
+        menuVisible: true,
+
       linhas: [
             { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"},
             { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"},
@@ -19,25 +21,27 @@ export default {
             { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"},
             { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"},
             { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"},
-            { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"}
-            
-            
-            
-            
+            { item:"1002984", nome:"colch casal mol ensac", valor:"r$275,00",selecionar:"Digite sku, nome, ean", sku:".", produto:".", quantidade:"#"}        
         ]
     };
 },
-  components: { SysoHeader, SysoMenu }
+
+  components: { SysoHeader, SysoMenu },
+
+  methods: {
+        toggleMenu() {
+            this.menuVisible = !this.menuVisible;
+        },
+    }
 }
 
 </script>
 
 <template>
     <main>
-        <SysoHeader />
+        <SysoHeader @toggle-menu="toggleMenu" />
         <div id="content">
-            <SysoMenu />
-
+            <SysoMenu :menuVisible="menuVisible" />
             <div id="dados-content">
                 <div id="dados">
                     <p>Gestão armazenagem > <span>Consulta de entrada de NFe</span></p>
@@ -151,17 +155,17 @@ button {
     width: 6.7rem;
     height: 1.4rem;
     border-radius: .5rem;
-    border: 1px solid #235339;
+    border: 1px solid var(--dark-green);
     font-family: 'Engravers Gothic';
     font-size: .7rem;    
     color: var(--white);
-    background-color: #235339;
+    background-color: var(--dark-green);
     transition: .5s;
 }
 
 button:hover {
     cursor: pointer;
-    background-color: #86C526;
+    background-color: var(--light-green);
     color: var(--white);
 }
 
@@ -174,7 +178,7 @@ button:hover {
 #dados-content {
     height: 34rem;
     width: 65rem;    
-    background-color: #f0f0f0;
+    background-color: var(--dark-gray);
     border-radius: 17px;
 }
 
@@ -182,12 +186,12 @@ button:hover {
     height: 33.2rem;
     width: 64.26rem;
     margin: .4rem;
-    background-color: #f7f7f7;    
+    background-color: var(--light-gray);    
     border-radius: 11px;
     font-family: 'Engravers Gothic Bold';
     font-size: .8rem;
     font-weight: bold;
-    color: #235339;       
+    color: var(--dark-green);       
 }
 
 #dados p {
@@ -214,7 +218,7 @@ button:hover {
     align-items: center;
     margin-bottom: .9rem;
     padding: 1rem 0 .7rem 1.37rem;    
-    border: 2px solid #235339;
+    border: 2px solid var(--dark-green);
     border-radius: 1rem;
 }
 
@@ -240,12 +244,12 @@ button:hover {
 }
 
 #botoes-pesquisa button:last-child:hover {    
-    background-color: #86C526;
+    background-color: var(--light-green);
     color: var(--white);        
 }
 
 #container-tabela {
-    border: 2px solid #235339;
+    border: 2px solid var(--dark-green);
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 1rem;   
@@ -261,7 +265,7 @@ button:hover {
     font-size: .8rem;
     padding: .3rem 0;
     border-top: none;
-    background-color: #235339;
+    background-color: var(--dark-green);
     color: var(--white);        
 }
 
@@ -271,9 +275,8 @@ button:hover {
 }
 
 .linha {
-    display: grid;  
-    /* grid-template-columns: 1fr 1.7595fr 1.2025fr 1.2025fr 1.2025fr 2.9241fr 1.9873fr; */
-     grid-template-columns: 1fr 1.7614fr 1.2045fr 1.4886fr 1.2045fr 2.9205fr 1.7045fr;
+    display: grid;   
+    grid-template-columns: 1fr 1.7614fr 1.2045fr 1.4886fr 1.2045fr 2.9205fr 1.7045fr;
     align-items: center;
     border-bottom: 2px solid #e7e7e7; 
 }
@@ -288,7 +291,7 @@ button:hover {
 }
 
 #total {    
-    border: 2px solid #235339;
+    border: 2px solid var(--dark-green);
     border-radius: 1rem;
 }
 
@@ -325,7 +328,7 @@ button:hover {
 }
 
 #botoes-total button:last-child:hover {    
-    background-color: #86C526;
+    background-color: var(--light-green);
     color: var(--white);        
 }
 

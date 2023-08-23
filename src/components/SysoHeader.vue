@@ -5,8 +5,14 @@ export default {
     
     props: {},
 
-    methods: {},
-        
+    methods: {
+        toggleMenu() {
+            this.$emit("toggle-menu");
+        },
+    
+    },    
+
+    components: {}        
 }
 
 </script>
@@ -22,15 +28,13 @@ export default {
                 <input type="text">
                 <a href="#">
                     <img src="/src/assets/img/lupa.png">
-                </a>
-                
+                </a>                
             </div>           
 
             <div id="hamburguer">
-                <a href="#">
-                    <img src="/src/assets/img/menu_hamburguer.png">
+                <a href="#" @click.prevent="toggleMenu">
+                    <i class="ri-menu-line"></i>                    
                 </a>
-
             </div>
         </div>
     </header>
@@ -45,8 +49,7 @@ export default {
     padding-top: .4rem;
 }
 
-#logo {
-    /* padding: .5rem 0 0 4rem; */
+#logo {    
     padding-left: 4.8rem;
     padding-right: 9.2rem;
 }
@@ -70,14 +73,19 @@ export default {
     border-radius: .3rem;
 }
 
-#search-bar img {
-    max-width: 70px;
-    padding-left: .5rem;
+#search-bar a {
     margin-right: 2rem;
 }
 
-#hamburguer img {
-    max-width: 55px;
+#search-bar img {
+    max-width: 70px;
+    padding-left: .5rem;    
+}
+
+#hamburguer a i {
+    padding-bottom: .2rem;
+    font-size: 3.5rem;
+    color: black;
 }
 
 </style>

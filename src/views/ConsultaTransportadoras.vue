@@ -3,39 +3,47 @@ import SysoHeader from '../components/SysoHeader.vue';
 import SysoMenu from '../components/SysoMenu.vue';
 
 export default {
-  name: 'ConsultaTransportadoras',
+    name: 'ConsultaTransportadoras',
 
-  data() {
-    return {
-      linhas: [
-            { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
-            { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
-            { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
-            { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
-            { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
-            { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
-            { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
-            { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
-            { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
-            { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
-            { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
-            { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
-            { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
-                   
-        ]
-    };
-},
-  components: { SysoHeader, SysoMenu }
+    data() {
+        return {
+            menuVisible: true,
+
+            linhas: [
+                    { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
+                    { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
+                    { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
+                    { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
+                    { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
+                    { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
+                    { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
+                    { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
+                    { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
+                    { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
+                    { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
+                    { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
+                    { nome: "Viper Transporter", cnpj: "11.111.111.11/0001-10", site: "10", rastreamento: "www.ssw.com.br", contato: "Amarildo José da Silva", telefone: "11 96778-3667", email: "vipex@vipex.com.br", acoes: "Relacionar lista de abrangência | Editar transportadora | Status" },
+                        
+                ]
+        };
+    },
+
+    components: { SysoHeader, SysoMenu },
+
+    methods: {
+        toggleMenu() {
+            this.menuVisible = !this.menuVisible;
+        },
+    }  
 }
 
 </script>
 
 <template>
     <main>
-        <SysoHeader />
+        <SysoHeader @toggle-menu="toggleMenu" />
         <div id="content">
-            <SysoMenu />
-            
+            <SysoMenu :menuVisible="menuVisible" />            
             <div id="dados-content">
                 <div id="dados">
                     <p>Gestão de Logística > <span>Consulta Transportadoras</span></p>
@@ -66,6 +74,7 @@ export default {
                                     <label for="estoque">Estoque:</label>
                                     <input type="text" name="estoque">
                                 </div>
+                                
                                 <button type="submit">Filtrar</button>
                             </form>                            
                         </div>                    
@@ -159,7 +168,7 @@ label {
 #dados-content {
     height: 34rem;
     width: 65rem;    
-    background-color: #f0f0f0;
+    background-color: var(--dark-gray);
     border-radius: 17px;
 }
 
@@ -167,7 +176,7 @@ label {
     height: 33.2rem;
     width: 64.26rem;
     margin: .4rem;
-    background-color: #f7f7f7;    
+    background-color: var(--light-gray);    
     border-radius: 11px;
     font-family: 'Engravers Gothic Bold';
     font-size: .8rem;
@@ -200,7 +209,7 @@ label {
     align-items: center;
     width: 35%;
     padding: .5rem 0;
-    border: 2px solid #235339;
+    border: 2px solid var(--dark-green);
     border-radius: 1rem;
     margin-bottom: .9rem;
 }
@@ -222,19 +231,19 @@ label {
     border: none;
     font-family: 'Engravers Gothic';    
     color: var(--white);
-    background-color: #235339;
+    background-color: var(--dark-green);
     transition: .5s;
 }
 
 #filtro form button:hover {
     cursor: pointer;   
-    background-color: #86C526;            
+    background-color: var(--light-green);            
 }
 
 #resultado {
     display: flex;
     flex-direction: column;
-    border: 2px solid #235339;
+    border: 2px solid var(--dark-green);
     border-radius: 1rem;
     overflow: hidden;
 }
@@ -265,7 +274,7 @@ label {
     font-size: .7rem;
     padding: .3rem 0;
     border-top: none;
-    background-color: #235339;
+    background-color: var(--dark-green);
     color: var(--white);        
 }
 
@@ -305,13 +314,13 @@ label {
     border: none;
     font-family: 'Engravers Gothic';    
     color: var(--white);
-    background-color: #235339;
+    background-color: var(--dark-green);
     transition: .5s;
 }
 
 #botao button:hover {
     cursor: pointer;   
-    background-color: #86C526;            
+    background-color: var(--light-green);            
 }
 
 #paginas {
@@ -325,13 +334,13 @@ label {
 }
 
 #paginas a i {
-    color: #235339;
+    color: var(--dark-green);
     font-size: 1rem;
     transition: .5s;
 }
 
 #paginas a i:hover {       
-    color: #86C526;            
+    color: var(--light-green);            
 }
 
 </style>

@@ -24,11 +24,15 @@ const router = createRouter({
       name: 'ConsultaNfe',
       component: () => import('../views/ConsultaNfe.vue')
     },
-
     {
       path: '/entrada-nota',
       name: 'EntradaNFe',
       component: () => import('../views/EntradaNFe.vue')
+    },
+    {
+      path: '/pedidos-despacho',
+      name: 'PedidosDespacho',
+      component: () => import('../views/PedidosDespacho.vue')
     }
   ]
 })
